@@ -5,8 +5,8 @@ import java.util.Map;
 
 import com.paipianwang.pat.common.entity.DataGrid;
 import com.paipianwang.pat.common.entity.PageParam;
-import com.paipianwang.pat.common.entity.ThirdBind;
 import com.paipianwang.pat.facade.user.entity.PmsUser;
+import com.paipianwang.pat.facade.user.entity.ThirdBind;
 
 /**
  * user Dubbo服务接口
@@ -102,4 +102,10 @@ public interface PmsUserFacade {
 	 * 修改 用户手机号码
 	 */
 	public long modifyUserPhone(PmsUser user);
+	
+	public List<PmsUser> all();
+	
+	public List<PmsUser> findUserByName(PmsUser user);
+	
+	public long findUnlevelUsers();
 }
