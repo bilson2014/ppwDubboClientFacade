@@ -1,11 +1,11 @@
 package com.paipianwang.pat.facade.user.entity;
 
-import com.paipianwang.pat.common.entity.BaseEntity;
+import com.paipianwang.pat.facade.right.entity.Customer;
 
 /**
  * 用户业务类
  */
-public class PmsUser extends BaseEntity {
+public class PmsUser extends Customer {
 
 	private static final long serialVersionUID = -3500839628063835593L;
 
