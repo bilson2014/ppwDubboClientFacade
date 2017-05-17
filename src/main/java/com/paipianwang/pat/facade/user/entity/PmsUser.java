@@ -9,70 +9,75 @@ public class PmsUser extends PmsCustomer {
 
 	private static final long serialVersionUID = -3500839628063835593L;
 
-	/**冗余字段，以id属性为准**/
-	private long userId = 0l; 
-	/**昵称**/
+	/** 冗余字段，以id属性为准 **/
+	private long userId = 0l;
+	/** 昵称 **/
 	private String userName = null;
-	/**真实姓名**/
-	private String realName = null; 
-	/**密码**/
-	private String password = null; 
-	/**性别 : 0:男 1:女 2:保密**/
-	private int sex = 0; 
-	/**手机**/
+	/** 真实姓名 **/
+	private String realName = null;
+	/** 密码 **/
+	private String password = null;
+	/** 性别 : 0:男 1:女 2:保密 **/
+	private int sex = 0;
+	/** 手机 **/
 	private String telephone = null;
-	/**邮箱**/
+	/** 邮箱 **/
 	private String email = null;
-	/**生日**/
+	/** 生日 **/
 	private String birthday = null;
-	/**创建日期**/
+	/** 创建日期 **/
 	private String createDate = null;
-	/**短信验证码**/
+	/** 短信验证码 **/
 	private String verification_code = null;
-	/**用户头像**/
+	/** 用户头像 **/
 	private String imgUrl = null;
-	/**QQ号码**/
-	private String qq = null; 
-	/**第三方登录方式 1.微博登录:weibo 2.qq登录:qq 3.微信登录:wechat**/
-	private String lType = null;   
-	/**第三方登录用户唯一标识**/
-	private String uniqueId = null;   
-	/**第三方登录用户唯一ID-QQ**/
-	private String qqUnique = null;   
-	/**第三方登录用户唯一ID-微博**/
-	private String wbUnique = null;  
-	/**第三方登录用户唯一ID-微信**/
-	private String wechatUnique = null;   
-	/**头像文件名称**/
-	private String imgFileName = null;   
-	/**客户公司**/
-	private String userCompany = null;   
-	/**客户级别**/
-	private Integer clientLevel = null;   
-	/**备注信息**/
-	private String note = null;   
-	/**登录方式**/
-	private String loginType;  
-	/**客户登录名**/
-	private String loginName;  
-	/**客户来源**/
-	private Integer customerSource = null;  
-	/**微信号**/
-	private String weChat = null; 
-	/**客户意向度**/
-	private Integer preference = null; 
-	/**再次跟进时间**/
-	private String followTime = null; 
-	/**更新时间**/
-	private String updateTime = null; 
-	/**是否推送**/
-	private Boolean kindlySend = null; 
-	/**clientLevel **/
+	/** QQ号码 **/
+	private String qq = null;
+	/** 第三方登录方式 1.微博登录:weibo 2.qq登录:qq 3.微信登录:wechat **/
+	private String lType = null;
+	/** 第三方登录用户唯一标识 **/
+	private String uniqueId = null;
+	/** 第三方登录用户唯一ID-QQ **/
+	private String qqUnique = null;
+	/** 第三方登录用户唯一ID-微博 **/
+	private String wbUnique = null;
+	/** 第三方登录用户唯一ID-微信 **/
+	private String wechatUnique = null;
+	/** 头像文件名称 **/
+	private String imgFileName = null;
+	/** 客户公司 **/
+	private String userCompany = null;
+	/** 客户级别 **/
+	private Integer clientLevel = null;
+	/** 备注信息 **/
+	private String note = null;
+	/** 登录方式 **/
+	private String loginType;
+	/** 客户登录名 **/
+	private String loginName;
+	/** 客户来源 **/
+	private Integer customerSource = null;
+	/** 微信号 **/
+	private String weChat = null;
+	/** 客户意向度 **/
+	private Integer preference = null;
+	/** 再次跟进时间 **/
+	private String followTime = null;
+	/** 更新时间 **/
+	private String updateTime = null;
+	/** 是否推送 **/
+	private Boolean kindlySend = null;
+	/** clientLevel **/
 	public final static int S = 3;
 	public final static int A = 0;
 	public final static int B = 1;
 	public final static int C = 2;
-	
+
+	/**
+	 * 职位
+	 */
+	private Integer position;
+
 	public Boolean getKindlySend() {
 		return kindlySend;
 	}
@@ -303,6 +308,14 @@ public class PmsUser extends PmsCustomer {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public Integer getPosition() {
+		return position;
+	}
+
+	public void setPosition(Integer position) {
+		this.position = position;
 	}
 
 }
