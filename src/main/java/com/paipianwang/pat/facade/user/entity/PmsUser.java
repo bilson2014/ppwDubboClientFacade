@@ -72,11 +72,38 @@ public class PmsUser extends PmsCustomer {
 	public final static int A = 0;
 	public final static int B = 1;
 	public final static int C = 2;
-
+	/**
+	 * 推荐人ID
+	 */
+	private Long referrerId;
+	/**
+	 * 网址
+	 */
+	private String officialSite;
 	/**
 	 * 职位
 	 */
 	private Integer position;
+	/**
+	 * 客户类型
+	 */
+	private Integer customerType;
+	/**
+	 * 购买频次
+	 */
+	private Integer purchaseFrequency;
+	/**
+	 * 购买价格
+	 */
+	private Integer purchasePrice;
+	/**
+	 * 客户规模
+	 */
+	private Integer customerSize;
+	/**
+	 * 高层背书
+	 */
+	private Integer endorse;
 
 	public Boolean getKindlySend() {
 		return kindlySend;
@@ -316,6 +343,62 @@ public class PmsUser extends PmsCustomer {
 
 	public void setPosition(Integer position) {
 		this.position = position;
+	}
+
+	public Long getReferrerId() {
+		return referrerId;
+	}
+
+	public void setReferrerId(Long referrerId) {
+		this.referrerId = referrerId;
+	}
+
+	public String getOfficialSite() {
+		return officialSite;
+	}
+
+	public void setOfficialSite(String officialSite) {
+		this.officialSite = officialSite;
+	}
+
+	public Integer getCustomerType() {
+		return customerType;
+	}
+
+	public void setCustomerType(Integer customerType) {
+		this.customerType = customerType;
+	}
+
+	public Integer getPurchaseFrequency() {
+		return purchaseFrequency;
+	}
+
+	public void setPurchaseFrequency(Integer purchaseFrequency) {
+		this.purchaseFrequency = purchaseFrequency;
+	}
+
+	public Integer getPurchasePrice() {
+		return purchasePrice;
+	}
+
+	public void setPurchasePrice(Integer purchasePrice) {
+		this.purchasePrice = purchasePrice;
+	}
+
+	public Integer getCustomerSize() {
+		return customerSize;
+	}
+
+	public void setCustomerSize(Integer customerSize) {
+		this.customerSize = customerSize;
+	}
+
+	public Integer getEndorse() {
+		return endorse;
+	}
+
+	public void setEndorse(Integer endorse) {
+		this.endorse = endorse;
 	}
 
 }

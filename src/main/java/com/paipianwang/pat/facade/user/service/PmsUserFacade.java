@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.paipianwang.pat.common.entity.DataGrid;
 import com.paipianwang.pat.common.entity.PageParam;
+import com.paipianwang.pat.facade.user.entity.Grade;
 import com.paipianwang.pat.facade.user.entity.PmsUser;
 import com.paipianwang.pat.facade.user.entity.ThirdBind;
 
@@ -133,4 +134,20 @@ public interface PmsUserFacade {
 	 * @return
 	 */
 	public List<PmsUser> findUserByIds(List<Long> userIds);
+
+	/**
+	 * 获取评分选项
+	 * 
+	 * @return
+	 */
+	public Map<String, Grade.Option[]> getSelectOption();
+
+	/**
+	 * 计算分数
+	 * 
+	 * @param user
+	 * @return
+	 */
+	public int computeScore(PmsUser user);
+
 }
