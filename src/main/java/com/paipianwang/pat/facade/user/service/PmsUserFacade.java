@@ -148,6 +148,12 @@ public interface PmsUserFacade {
 	 * @param user
 	 * @return
 	 */
-	public int computeScore(PmsUser user);
+	public Integer computeScore(PmsUser user);
+	
+	/**
+	 * 获取下拉菜单
+	 * @return
+	 */
+	public List<PmsUser> getDroplist();
 
 }

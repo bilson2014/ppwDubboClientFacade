@@ -13,7 +13,7 @@ public class Grade implements Serializable {
 	/**
 	 * 类型/客户来源
 	 */
-	public static Option[] customerType = new Option[13];
+	public static Option[] customerType = new Option[3];
 
 	/**
 	 * 背书
@@ -43,18 +43,9 @@ public class Grade implements Serializable {
 		position[4] = new Option(4, "其他：非关联部门", 1);
 		// 类型/客户来源
 		customerType[0] = new Option(1, "渠道", 3);
-		customerType[1] = new Option(2, "推广", 0);
-		customerType[2] = new Option(3, "直客", 5); // 自主开发
-		customerType[3] = new Option(4, "活动", 0);
-		customerType[4] = new Option(5, "推荐", 0);
-		customerType[5] = new Option(6, "电销", 0);
-		customerType[6] = new Option(7, "新媒体", 0);
-		customerType[7] = new Option(8, "线下拓展", 0);
-		customerType[8] = new Option(9, "市场活动", 0);
-		customerType[9] = new Option(10, "社区运营", 0);
-		customerType[10] = new Option(11, "复购", 0);
-		customerType[11] = new Option(12, "4A有策划", 2);
-		customerType[12] = new Option(13, "4A无策划", 0);
+		customerType[1] = new Option(3, "直客", 5); // 自主开发
+		customerType[2] = new Option(12, "4A有策划", 2);
+		
 		// 背书
 		endorse[0] = new Option(0, "有高层背书", 5);
 		endorse[1] = new Option(1, "无高层背书", 0);

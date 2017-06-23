@@ -72,6 +72,7 @@ public class PmsUser extends PmsCustomer {
 	public final static int A = 0;
 	public final static int B = 1;
 	public final static int C = 2;
+	public final static int D = 4;
 	/**
 	 * 推荐人ID
 	 */
