@@ -42,9 +42,9 @@ public class Grade implements Serializable {
 		position[3] = new Option(3, "基层：获取合作信息", 2);
 		position[4] = new Option(4, "其他：非关联部门", 1);
 		// 类型/客户来源
-		customerType[0] = new Option(1, "渠道", 3);
+		customerType[0] = new Option(1, "分销客户", 3);
 		customerType[1] = new Option(3, "直客", 5); // 自主开发
-		customerType[2] = new Option(12, "4A有策划", 2);
+		customerType[2] = new Option(12, "4A", 2);
 		
 		// 背书
 		endorse[0] = new Option(0, "有高层背书", 5);
