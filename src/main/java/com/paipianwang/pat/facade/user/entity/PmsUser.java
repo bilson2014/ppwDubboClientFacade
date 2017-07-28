@@ -105,6 +105,91 @@ public class PmsUser extends PmsCustomer {
 	 * 高层背书
 	 */
 	private Integer endorse;
+	
+	//////////////////////////////// 客户类型（直销-对应订单来源）///////////////////////////////
+	/**
+	 * 直销-线上-网站
+	 */
+	public static final int TYPE_ONLINE_WEBSITE = 14;
+	/**
+	 * 直销-线上-活动
+	 */
+	public static final int TYPE_ONLINE_ACTIVITY = 15;
+	/**
+	 * 直销-线上-新媒体
+	 */
+	public static final int TYPE_ONLINE_NEW_MEDIA = 16;
+	/**
+	 * 直销-线下-电销
+	 */
+	public static final int TYPE_OFFLINE_TELEMARKETING = 17;
+	/**
+	 * 直销-线下-直销
+	 */
+	public static final int TYPE_OFFLINE_DIRECT_SELLING = 18;
+	/**
+	 * 直销-线下-活动
+	 */
+	public static final int TYPE_OFFLINE_ACTIVITY = 19;
+	/**
+	 * 直销-线下-渠道
+	 */
+	public static final int TYPE_OFFLINE_CHANNEL = 20;
+	/**
+	 * 直销-线上-400
+	 */
+	public static final int TYPE_ONLINE_400 = 21;
+	/**
+	 * 直销-线上-商桥
+	 */
+	public static final int TYPE_ONLINE_BRIDGE = 22;
+	/**
+	 * 线上-PC-首页banner
+	 */
+	public static final int TYPE_ONLINE_PC_BANNER=23;
+	/**
+	 * 线上-PC-直接下单
+	 */
+	public static final int TYPE_ONLINE_PC_DIRECT=24;
+	/**
+	 * 线上-PC-成本计算器
+	 */
+	public static final int TYPE_ONLINE_PC_COST=25;
+	/**
+	 * 线上-PC-供应商首页下单
+	 */
+	public static final int TYPE_ONLINE_PC_TEAM=26;
+	/**
+	 * 线上-PC-作品
+	 */
+	public static final int TYPE_ONLINE_PC_PRODUCT=27;
+
+	/**
+	 * 线上-移动-首页banner
+	 */
+	public static final int TYPE_ONLINE_PHONE_BANNER=28;
+	/**
+	 * 线上-移动-成本计算器
+	 */
+	public static final int TYPE_ONLINE_PHONE_COST=29;
+	/**
+	 * 线上-移动-作品
+	 */
+	public static final int TYPE_ONLINE_PHONE_PRODUCT=30;
+
+	/**
+	 * 线上-新媒体-拍片网公众号-成本计算器 
+	 */
+	public static final int TYPE_ONLINE_WECHAT_COST=31;
+	/**
+	 * 线上-新媒体-拍片网公众号-直接下单 
+	 */
+	public static final int TYPE_ONLINE_WECHAT_DIRECT=32;
+	/**
+	 * 线上-新媒体-拍片网公众号-作品
+	 */
+	public static final int TYPE_ONLINE_WECHAT_PRODUCT=33;
+
 
 	public Boolean getKindlySend() {
 		return kindlySend;

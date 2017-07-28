@@ -13,7 +13,7 @@ public class Grade implements Serializable {
 	/**
 	 * 类型/客户来源
 	 */
-	public static Option[] customerType = new Option[3];
+	public static Option[] customerType = new Option[22];
 
 	/**
 	 * 背书
@@ -43,8 +43,31 @@ public class Grade implements Serializable {
 		position[4] = new Option(4, "其他：非关联部门", 1);
 		// 类型/客户来源
 		customerType[0] = new Option(1, "分销客户", 3);
-		customerType[1] = new Option(3, "直客", 5); // 自主开发
-		customerType[2] = new Option(12, "4A", 2);
+//		customerType[1] = new Option(3, "直客", 5); // 自主开发
+		customerType[1] = new Option(12, "4A", 2);
+		customerType[2] = new Option(PmsUser.TYPE_ONLINE_WEBSITE, "直客-线上-网站", 5);//以下：直客类型分别对应订单状态
+		customerType[3] = new Option(PmsUser.TYPE_ONLINE_ACTIVITY, "直客-线上-活动", 5);
+		customerType[4] = new Option(PmsUser.TYPE_ONLINE_NEW_MEDIA, "直客-线上-新媒体", 5);
+		customerType[5] = new Option(PmsUser.TYPE_OFFLINE_TELEMARKETING, "直客-线下-电销", 5);
+		customerType[6] = new Option(PmsUser.TYPE_OFFLINE_DIRECT_SELLING, "直客-线下-直销", 5);
+		customerType[7] = new Option(PmsUser.TYPE_OFFLINE_ACTIVITY, "直客-线下-活动", 5);
+		customerType[8] = new Option(PmsUser.TYPE_OFFLINE_CHANNEL, "直客-线下-渠道", 5);
+		customerType[9] = new Option(PmsUser.TYPE_ONLINE_400, "直客-线上-400", 5);
+		customerType[10] = new Option(PmsUser.TYPE_ONLINE_BRIDGE, "直客-线上-商桥", 5);
+		
+		customerType[11] = new Option(PmsUser.TYPE_ONLINE_PC_BANNER,"直客-线上-PC-首页banner", 5);
+		customerType[12] = new Option(PmsUser.TYPE_ONLINE_PC_DIRECT,"直客-线上-PC-直接下单", 5);
+		customerType[13] = new Option(PmsUser.TYPE_ONLINE_PC_COST,"直客-线上-PC-成本计算器", 5);
+		customerType[14] = new Option(PmsUser.TYPE_ONLINE_PC_TEAM,"直客-线上-PC-供应商首页", 5);
+		customerType[15] = new Option(PmsUser.TYPE_ONLINE_PC_PRODUCT,"直客-线上-PC-作品", 5);
+		
+		customerType[16] = new Option(PmsUser.TYPE_ONLINE_PHONE_BANNER,"直客-线上-移动-首页banner", 5);
+		customerType[17] = new Option(PmsUser.TYPE_ONLINE_PHONE_COST,"直客-线上-移动-成本计算器", 5);
+		customerType[18] = new Option(PmsUser.TYPE_ONLINE_PHONE_PRODUCT,"直客-线上-移动-作品", 5);
+		
+		customerType[19] = new Option(PmsUser.TYPE_ONLINE_WECHAT_COST,"直客-线上-公众号-成本计算器 ", 5);
+		customerType[20] = new Option(PmsUser.TYPE_ONLINE_WECHAT_DIRECT,"直客-线上-公众号-直接下单", 5);	
+		customerType[21] = new Option(PmsUser.TYPE_ONLINE_WECHAT_PRODUCT,"直客-线上-公众号-作品", 5);
 		
 		// 背书
 		endorse[0] = new Option(0, "有高层背书", 5);
