@@ -120,7 +120,7 @@ public class PmsUser extends PmsCustomer {
 	 */
 	public static final int TYPE_ONLINE_NEW_MEDIA = 16;
 	/**
-	 * 直销-线下-电销
+	 * 直销-线上-电销
 	 */
 	public static final int TYPE_OFFLINE_TELEMARKETING = 17;
 	/**
