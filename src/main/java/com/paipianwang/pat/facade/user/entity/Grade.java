@@ -46,11 +46,12 @@ public class Grade implements Serializable {
 //		customerType[1] = new Option(3, "直客", 5); // 自主开发
 		customerType[1] = new Option(12, "4A", 2);
 		
-		customerType[2] = new Option(PmsUser.TYPE_OFFLINE_TELEMARKETING, "直客-线上-电销", 5);
-		customerType[3] = new Option(PmsUser.TYPE_OFFLINE_DIRECT_SELLING, "直客-线下-直销", 5);
-		customerType[4] = new Option(PmsUser.TYPE_OFFLINE_ACTIVITY, "直客-线下-活动", 5);
-		customerType[5] = new Option(PmsUser.TYPE_OFFLINE_CHANNEL, "直客-线下-渠道", 5);
 		
+		customerType[2] = new Option(PmsUser.TYPE_OFFLINE_DIRECT_SELLING, "直客-线下-直销", 5);
+		customerType[3] = new Option(PmsUser.TYPE_OFFLINE_ACTIVITY, "直客-线下-活动", 5);
+		customerType[4] = new Option(PmsUser.TYPE_OFFLINE_CHANNEL, "直客-线下-渠道", 5);
+		
+		customerType[5] = new Option(PmsUser.TYPE_OFFLINE_TELEMARKETING, "直客-线上-电销", 5);	
 		customerType[6] = new Option(PmsUser.TYPE_ONLINE_WEBSITE, "直客-线上-网站", 5);//以下：直客类型分别对应订单状态
 		customerType[7] = new Option(PmsUser.TYPE_ONLINE_ACTIVITY, "直客-线上-活动", 5);
 		customerType[8] = new Option(PmsUser.TYPE_ONLINE_NEW_MEDIA, "直客-线上-新媒体", 5);
