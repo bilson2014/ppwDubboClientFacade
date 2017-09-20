@@ -189,6 +189,11 @@ public class PmsUser extends PmsCustomer {
 	 * 线上-新媒体-拍片网公众号-作品
 	 */
 	public static final int TYPE_ONLINE_WECHAT_PRODUCT=33;
+	
+	/**
+	 * 线上-SEM
+	 */
+	public static final int TYPE_ONLINE_SEM=34;
 
 
 	public Boolean getKindlySend() {
