@@ -13,7 +13,7 @@ public class Grade implements Serializable {
 	/**
 	 * 类型/客户来源
 	 */
-	public static Option[] customerType = new Option[23];
+	public static Option[] customerType = new Option[24];
 
 	/**
 	 * 背书
@@ -73,6 +73,7 @@ public class Grade implements Serializable {
 		customerType[20] = new Option(PmsUser.TYPE_ONLINE_WECHAT_DIRECT,"直客-线上-公众号-直接下单", 5);	
 		customerType[21] = new Option(PmsUser.TYPE_ONLINE_WECHAT_PRODUCT,"直客-线上-公众号-作品", 5);
 		customerType[22] = new Option(PmsUser.TYPE_ONLINE_SEM,"直客-线上-SEM", 5);
+		customerType[23] = new Option(PmsUser.TYPE_ONLINE_DINGDING,"直客-线上-钉钉", 5);
 		
 		// 背书
 		endorse[0] = new Option(0, "有高层背书", 5);

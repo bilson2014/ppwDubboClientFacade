@@ -194,6 +194,11 @@ public class PmsUser extends PmsCustomer {
 	 * 线上-SEM
 	 */
 	public static final int TYPE_ONLINE_SEM=34;
+	
+	/**
+	 * 线上-钉钉
+	 */
+	public static final int TYPE_ONLINE_DINGDING=35;
 
 
 	public Boolean getKindlySend() {
