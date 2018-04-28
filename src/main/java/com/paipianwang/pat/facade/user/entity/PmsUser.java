@@ -199,6 +199,10 @@ public class PmsUser extends PmsCustomer {
 	 * 线上-钉钉
 	 */
 	public static final int TYPE_ONLINE_DINGDING=35;
+	/**
+	 * 线上-直销
+	 */
+	public static final int TYPE_ONLINE_SALES=36;
 
 
 	public Boolean getKindlySend() {
